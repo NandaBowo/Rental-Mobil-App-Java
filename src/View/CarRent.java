@@ -52,8 +52,8 @@ public class CarRent extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         carCodeField = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        pinjamBtn = new javax.swing.JButton();
+        kembaliBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -118,25 +118,25 @@ public class CarRent extends javax.swing.JFrame {
 
         carCodeField.setEditable(false);
 
-        jButton1.setBackground(new java.awt.Color(0, 255, 0));
-        jButton1.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 16)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jButton1.setText("Pinjam");
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        pinjamBtn.setBackground(new java.awt.Color(0, 255, 0));
+        pinjamBtn.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 16)); // NOI18N
+        pinjamBtn.setForeground(new java.awt.Color(0, 0, 0));
+        pinjamBtn.setText("Pinjam");
+        pinjamBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        pinjamBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                pinjamBtnActionPerformed(evt);
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(255, 0, 0));
-        jButton3.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 16)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Kembali");
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        kembaliBtn.setBackground(new java.awt.Color(255, 0, 0));
+        kembaliBtn.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 16)); // NOI18N
+        kembaliBtn.setForeground(new java.awt.Color(255, 255, 255));
+        kembaliBtn.setText("Kembali");
+        kembaliBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        kembaliBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                kembaliBtnActionPerformed(evt);
             }
         });
 
@@ -163,9 +163,9 @@ public class CarRent extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButton1)
+                                .addComponent(pinjamBtn)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton3))
+                                .addComponent(kembaliBtn))
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addComponent(carCodeField, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -200,8 +200,8 @@ public class CarRent extends javax.swing.JFrame {
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(47, 47, 47)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3)
-                    .addComponent(jButton1))
+                    .addComponent(kembaliBtn)
+                    .addComponent(pinjamBtn))
                 .addContainerGap(39, Short.MAX_VALUE))
         );
 
@@ -225,15 +225,15 @@ public class CarRent extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void kembaliBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kembaliBtnActionPerformed
         // TODO add your handling code here:
         Home h = new Home();
         
         this.setVisible(false);
         h.setVisible(true);
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_kembaliBtnActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void pinjamBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pinjamBtnActionPerformed
         // TODO add your handling code here:
         String tenantName = tenantField.getText();
         String rentDate = rentDateField.getText();
@@ -258,7 +258,7 @@ public class CarRent extends javax.swing.JFrame {
 
             showTable();
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_pinjamBtnActionPerformed
 
     private void carMasterTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_carMasterTableMouseClicked
         // TODO add your handling code here:
@@ -307,8 +307,6 @@ public class CarRent extends javax.swing.JFrame {
     private javax.swing.JTextField carCodeField;
     private javax.swing.JTable carMasterTable;
     private javax.swing.JTextField durationField;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -317,6 +315,8 @@ public class CarRent extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JButton kembaliBtn;
+    private javax.swing.JButton pinjamBtn;
     private javax.swing.JTextField rentDateField;
     private javax.swing.JTextField tenantField;
     // End of variables declaration//GEN-END:variables

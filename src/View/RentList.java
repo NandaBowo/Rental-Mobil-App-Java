@@ -50,8 +50,8 @@ public class RentList extends javax.swing.JFrame {
         carCodeField = new javax.swing.JTextField();
         jScrollPane3 = new javax.swing.JScrollPane();
         rentListTable = new javax.swing.JTable();
-        jButton5 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        hapusDataBtn = new javax.swing.JButton();
+        kembaliBtn = new javax.swing.JButton();
 
         carMasterTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -129,25 +129,25 @@ public class RentList extends javax.swing.JFrame {
         });
         jScrollPane3.setViewportView(rentListTable);
 
-        jButton5.setBackground(new java.awt.Color(255, 0, 0));
-        jButton5.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 16)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Hapus Data");
-        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        hapusDataBtn.setBackground(new java.awt.Color(255, 0, 0));
+        hapusDataBtn.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 16)); // NOI18N
+        hapusDataBtn.setForeground(new java.awt.Color(255, 255, 255));
+        hapusDataBtn.setText("Hapus Data");
+        hapusDataBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        hapusDataBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                hapusDataBtnActionPerformed(evt);
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(255, 255, 0));
-        jButton2.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 16)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(0, 0, 0));
-        jButton2.setText("Kembali");
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        kembaliBtn.setBackground(new java.awt.Color(255, 255, 0));
+        kembaliBtn.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 16)); // NOI18N
+        kembaliBtn.setForeground(new java.awt.Color(0, 0, 0));
+        kembaliBtn.setText("Kembali");
+        kembaliBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        kembaliBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                kembaliBtnActionPerformed(evt);
             }
         });
 
@@ -165,9 +165,9 @@ public class RentList extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton5)
+                        .addComponent(hapusDataBtn)
                         .addGap(175, 175, 175)
-                        .addComponent(jButton2))
+                        .addComponent(kembaliBtn))
                     .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 554, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(10, Short.MAX_VALUE))
         );
@@ -182,8 +182,8 @@ public class RentList extends javax.swing.JFrame {
                     .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton5)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(hapusDataBtn)
+                    .addComponent(kembaliBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(15, Short.MAX_VALUE))
         );
 
@@ -207,15 +207,15 @@ public class RentList extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void kembaliBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kembaliBtnActionPerformed
         // TODO add your handling code here:
         Home h = new Home();
         
         this.setVisible(false);
         h.setVisible(true);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_kembaliBtnActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void hapusDataBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hapusDataBtnActionPerformed
         // TODO add your handling code here:
         RentAbstract rent = new RentExtends();
         
@@ -236,7 +236,7 @@ public class RentList extends javax.swing.JFrame {
             
             carCodeField.setText("");
         }
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_hapusDataBtnActionPerformed
 
     private void rentListTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rentListTableMouseClicked
         // TODO add your handling code here:
@@ -284,13 +284,13 @@ public class RentList extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField carCodeField;
     private javax.swing.JTable carMasterTable1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton hapusDataBtn;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JButton kembaliBtn;
     private javax.swing.JTable rentListTable;
     // End of variables declaration//GEN-END:variables
 

@@ -40,7 +40,7 @@ public class Home extends javax.swing.JFrame {
         menuMobilBtn = new javax.swing.JButton();
         pinjamMobilBtn = new javax.swing.JButton();
         keluarBtn = new javax.swing.JButton();
-        pinjamMobilBtn1 = new javax.swing.JButton();
+        dataPinjamBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -85,14 +85,14 @@ public class Home extends javax.swing.JFrame {
             }
         });
 
-        pinjamMobilBtn1.setBackground(new java.awt.Color(51, 51, 255));
-        pinjamMobilBtn1.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 16)); // NOI18N
-        pinjamMobilBtn1.setForeground(new java.awt.Color(227, 252, 191));
-        pinjamMobilBtn1.setText("Data Pinjam");
-        pinjamMobilBtn1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        pinjamMobilBtn1.addActionListener(new java.awt.event.ActionListener() {
+        dataPinjamBtn.setBackground(new java.awt.Color(51, 51, 255));
+        dataPinjamBtn.setFont(new java.awt.Font("MS Reference Sans Serif", 0, 16)); // NOI18N
+        dataPinjamBtn.setForeground(new java.awt.Color(227, 252, 191));
+        dataPinjamBtn.setText("Data Pinjam");
+        dataPinjamBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        dataPinjamBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                pinjamMobilBtn1ActionPerformed(evt);
+                dataPinjamBtnActionPerformed(evt);
             }
         });
 
@@ -109,7 +109,7 @@ public class Home extends javax.swing.JFrame {
                         .addGap(27, 27, 27)
                         .addComponent(pinjamMobilBtn)
                         .addGap(18, 18, 18)
-                        .addComponent(pinjamMobilBtn1))
+                        .addComponent(dataPinjamBtn))
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(60, Short.MAX_VALUE))
         );
@@ -122,7 +122,7 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(homePnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(menuMobilBtn)
                     .addComponent(pinjamMobilBtn)
-                    .addComponent(pinjamMobilBtn1))
+                    .addComponent(dataPinjamBtn))
                 .addGap(18, 18, 18)
                 .addComponent(keluarBtn)
                 .addContainerGap(33, Short.MAX_VALUE))
@@ -173,13 +173,13 @@ public class Home extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_keluarBtnActionPerformed
 
-    private void pinjamMobilBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pinjamMobilBtn1ActionPerformed
+    private void dataPinjamBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dataPinjamBtnActionPerformed
         // TODO add your handling code here:
         RentList rl = new RentList();
         
         this.setVisible(false);
         rl.setVisible(true);
-    }//GEN-LAST:event_pinjamMobilBtn1ActionPerformed
+    }//GEN-LAST:event_dataPinjamBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -217,11 +217,11 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton dataPinjamBtn;
     private javax.swing.JPanel homePnl;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JButton keluarBtn;
     private javax.swing.JButton menuMobilBtn;
     private javax.swing.JButton pinjamMobilBtn;
-    private javax.swing.JButton pinjamMobilBtn1;
     // End of variables declaration//GEN-END:variables
 }

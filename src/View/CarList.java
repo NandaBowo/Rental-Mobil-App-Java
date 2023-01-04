@@ -47,10 +47,10 @@ public class CarList extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         carMasterTable = new javax.swing.JTable();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        tambahDataBtn = new javax.swing.JButton();
+        ubahDataBtn = new javax.swing.JButton();
+        hapusDataBtn = new javax.swing.JButton();
+        refreshDataBtn = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -64,7 +64,7 @@ public class CarList extends javax.swing.JFrame {
         plateNumField = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
+        kembaliBtn = new javax.swing.JButton();
         carStatusField = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -113,47 +113,47 @@ public class CarList extends javax.swing.JFrame {
             carMasterTable.getColumnModel().getColumn(5).setHeaderValue("Status Mobil");
         }
 
-        jButton1.setBackground(new java.awt.Color(0, 255, 0));
-        jButton1.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 16)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jButton1.setText("Tambah Data");
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        tambahDataBtn.setBackground(new java.awt.Color(0, 255, 0));
+        tambahDataBtn.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 16)); // NOI18N
+        tambahDataBtn.setForeground(new java.awt.Color(0, 0, 0));
+        tambahDataBtn.setText("Tambah Data");
+        tambahDataBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        tambahDataBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                tambahDataBtnActionPerformed(evt);
             }
         });
 
-        jButton2.setBackground(new java.awt.Color(255, 255, 0));
-        jButton2.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 16)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(0, 0, 0));
-        jButton2.setText("Ubah Data");
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        ubahDataBtn.setBackground(new java.awt.Color(255, 255, 0));
+        ubahDataBtn.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 16)); // NOI18N
+        ubahDataBtn.setForeground(new java.awt.Color(0, 0, 0));
+        ubahDataBtn.setText("Ubah Data");
+        ubahDataBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        ubahDataBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                ubahDataBtnActionPerformed(evt);
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(255, 0, 0));
-        jButton3.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 16)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Hapus Data");
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        hapusDataBtn.setBackground(new java.awt.Color(255, 0, 0));
+        hapusDataBtn.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 16)); // NOI18N
+        hapusDataBtn.setForeground(new java.awt.Color(255, 255, 255));
+        hapusDataBtn.setText("Hapus Data");
+        hapusDataBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        hapusDataBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                hapusDataBtnActionPerformed(evt);
             }
         });
 
-        jButton5.setBackground(new java.awt.Color(0, 255, 255));
-        jButton5.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 16)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(0, 0, 0));
-        jButton5.setText("Refresh Data");
-        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        refreshDataBtn.setBackground(new java.awt.Color(0, 255, 255));
+        refreshDataBtn.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 16)); // NOI18N
+        refreshDataBtn.setForeground(new java.awt.Color(0, 0, 0));
+        refreshDataBtn.setText("Refresh Data");
+        refreshDataBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        refreshDataBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                refreshDataBtnActionPerformed(evt);
             }
         });
 
@@ -185,14 +185,14 @@ public class CarList extends javax.swing.JFrame {
         jLabel10.setForeground(new java.awt.Color(0, 0, 255));
         jLabel10.setText("Master Data Mobil");
 
-        jButton6.setBackground(new java.awt.Color(255, 255, 0));
-        jButton6.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 16)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(0, 0, 0));
-        jButton6.setText("Kembali");
-        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        kembaliBtn.setBackground(new java.awt.Color(255, 255, 0));
+        kembaliBtn.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 16)); // NOI18N
+        kembaliBtn.setForeground(new java.awt.Color(0, 0, 0));
+        kembaliBtn.setText("Kembali");
+        kembaliBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        kembaliBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                kembaliBtnActionPerformed(evt);
             }
         });
 
@@ -208,10 +208,10 @@ public class CarList extends javax.swing.JFrame {
                     .addComponent(jSeparator1)
                     .addGroup(carListPnlLayout.createSequentialGroup()
                         .addGroup(carListPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jButton3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(hapusDataBtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(tambahDataBtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(ubahDataBtn, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(refreshDataBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(18, 18, 18)
                         .addComponent(jScrollPane1))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, carListPnlLayout.createSequentialGroup()
@@ -241,7 +241,7 @@ public class CarList extends javax.swing.JFrame {
                             .addComponent(carStatusField, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, carListPnlLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton6)))
+                        .addComponent(kembaliBtn)))
                 .addContainerGap())
             .addGroup(carListPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, carListPnlLayout.createSequentialGroup()
@@ -255,13 +255,13 @@ public class CarList extends javax.swing.JFrame {
                 .addGap(79, 79, 79)
                 .addGroup(carListPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(carListPnlLayout.createSequentialGroup()
-                        .addComponent(jButton1)
+                        .addComponent(tambahDataBtn)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton2)
+                        .addComponent(ubahDataBtn)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton3)
+                        .addComponent(hapusDataBtn)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton5))
+                        .addComponent(refreshDataBtn))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 158, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -286,7 +286,7 @@ public class CarList extends javax.swing.JFrame {
                     .addComponent(jLabel8)
                     .addComponent(carStatusField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jButton6)
+                .addComponent(kembaliBtn)
                 .addContainerGap(14, Short.MAX_VALUE))
             .addGroup(carListPnlLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(carListPnlLayout.createSequentialGroup()
@@ -315,21 +315,21 @@ public class CarList extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void kembaliBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kembaliBtnActionPerformed
         // TODO add your handling code here:
         Home h = new Home();
         
         this.setVisible(false);
         h.setVisible(true);
         
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_kembaliBtnActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void refreshDataBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_refreshDataBtnActionPerformed
         // TODO add your handling code here:
         showTable();
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_refreshDataBtnActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void tambahDataBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tambahDataBtnActionPerformed
         // TODO add your handling code here:
         String carCode = carCodeField.getText();
         String carName = carNameField.getText();
@@ -360,9 +360,9 @@ public class CarList extends javax.swing.JFrame {
             plateNumField.setText("");
             carStatusField.setSelectedIndex(0);
 
-            jButton5ActionPerformed(evt);
+            refreshDataBtnActionPerformed(evt);
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_tambahDataBtnActionPerformed
 
     private void carMasterTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_carMasterTableMouseClicked
         // TODO add your handling code here:
@@ -381,7 +381,7 @@ public class CarList extends javax.swing.JFrame {
         carStatusField.setSelectedIndex(0);
     }//GEN-LAST:event_carMasterTableMouseClicked
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void ubahDataBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ubahDataBtnActionPerformed
         // TODO add your handling code here:
         if (carMasterTable.getSelectedRowCount() == 1) {
             String carCode = carCodeField.getText();
@@ -410,13 +410,13 @@ public class CarList extends javax.swing.JFrame {
             plateNumField.setText("");
             carStatusField.setSelectedIndex(0);
             
-            jButton5ActionPerformed(evt);
+            refreshDataBtnActionPerformed(evt);
         } else {
             JOptionPane.showMessageDialog(this, "Please pick one data!");
         }
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_ubahDataBtnActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void hapusDataBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hapusDataBtnActionPerformed
         // TODO add your handling code here:
         CarInterface car = new CarImplements();
         
@@ -433,7 +433,7 @@ public class CarList extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(this, "Data gagal dihapus!");
             }
             
-            jButton5ActionPerformed(evt);
+            refreshDataBtnActionPerformed(evt);
         }
         
         carCodeField.setText("");
@@ -442,7 +442,7 @@ public class CarList extends javax.swing.JFrame {
         capacityField.setText("");
         plateNumField.setText("");
         carStatusField.setSelectedIndex(0);
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_hapusDataBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -494,11 +494,7 @@ public class CarList extends javax.swing.JFrame {
     private javax.swing.JTable carMasterTable;
     private javax.swing.JTextField carNameField;
     private javax.swing.JComboBox<String> carStatusField;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
+    private javax.swing.JButton hapusDataBtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
@@ -509,7 +505,11 @@ public class CarList extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JButton kembaliBtn;
     private javax.swing.JTextField plateNumField;
+    private javax.swing.JButton refreshDataBtn;
+    private javax.swing.JButton tambahDataBtn;
+    private javax.swing.JButton ubahDataBtn;
     // End of variables declaration//GEN-END:variables
 
     private void showTable() {
