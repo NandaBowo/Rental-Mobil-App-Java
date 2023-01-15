@@ -248,7 +248,7 @@ public class CarRent extends javax.swing.JFrame {
             boolean rentAddStatus = rent.add(carCode, tenantName, rentDate, rentDuration);
             
             if (rentAddStatus == true) {
-                JOptionPane.showMessageDialog(this, "Data successfully added!");
+                JOptionPane.showMessageDialog(this, "Data berhasil ditambahkan!");
             }
 
             carCodeField.setText("");

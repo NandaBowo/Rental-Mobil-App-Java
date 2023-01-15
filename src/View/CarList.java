@@ -347,7 +347,7 @@ public class CarList extends javax.swing.JFrame {
                 boolean addStatus = car.add(carCode, carName, carBrand, carCapacity, carPlate, carStatus);
                 
                 if (addStatus == true) {
-                    JOptionPane.showMessageDialog(this, "Data successfully added!");
+                    JOptionPane.showMessageDialog(this, "Data berhasil ditambahkan!");
                 }
             } catch (NumberFormatException e) {
                 JOptionPane.showMessageDialog(this, "Masukkan angka ke dalam kolom kapasitas penumpang!");
@@ -397,7 +397,7 @@ public class CarList extends javax.swing.JFrame {
                 boolean editStatus = car.edit(carCode, carName, carBrand, carCapacity, carPlate, carStatus);
                 
                 if (editStatus == true) {
-                    JOptionPane.showMessageDialog(this, "Data successfully updated!");
+                    JOptionPane.showMessageDialog(this, "Data berhasil diubah!");
                 }
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(this, "Masukkan angka ke dalam kolom kapasitas penumpang!");
@@ -412,7 +412,7 @@ public class CarList extends javax.swing.JFrame {
             
             refreshDataBtnActionPerformed(evt);
         } else {
-            JOptionPane.showMessageDialog(this, "Please pick one data!");
+            JOptionPane.showMessageDialog(this, "Tolong pilih satu data!");
         }
     }//GEN-LAST:event_ubahDataBtnActionPerformed
 

@@ -4,11 +4,8 @@
  */
 package View;
 
-import Controller.CarImplements;
-import Controller.CarInterface;
 import Controller.RentAbstract;
 import Controller.RentExtends;
-import Model.CarModel;
 import Model.RentModel;
 import java.awt.Dimension;
 import java.awt.Toolkit;
